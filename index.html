@@ -19,6 +19,15 @@ and open the template in the editor.
         <canvas id="canvas" width="800" height="600" style= "border:1px white" tabindex="1"></canvas>
 
         <script>
+            function draw() {
+                var x = 100;
+                var y = 100;
+                var r = 30;
+                ctx.beginPath();
+                ctx.arc(x, y, r, 0, Math.PI * 2, true);
+                ctx.closePath();
+                ctx.fill();
+            }
             
         </script>
 
