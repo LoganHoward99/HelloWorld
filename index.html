@@ -19,14 +19,16 @@ and open the template in the editor.
         <canvas id="canvas" width="800" height="600" style= "border:1px white" tabindex="1"></canvas>
 
         <script>
-            function draw() {
-                var x = 100;
-                var y = 100;
-                var r = 30;
-                ctx.beginPath();
-                ctx.arc(x, y, r, 0, Math.PI * 2, true);
-                ctx.closePath();
-                ctx.fill();
+            var ctx; //defines the ctx variable for drawing on the canvas
+            var WIDTH; //variable for the width of the canvas
+            var HEIGHT; //variable for the height of the canvas
+            
+              function init() { //function to run once the window is loaded
+                ctx = document.getElementById('my_canvas').getContext('2d'); //setup the ctx for drawing on the canvas
+                WIDTH = ctx.canvas.width; //set the WIDTH = to the width of the canvas
+                HEIGHT = ctx.canvas.height; //set the HEIGHT = to the height of the canvas
+                
+               
             }
             
         </script>
